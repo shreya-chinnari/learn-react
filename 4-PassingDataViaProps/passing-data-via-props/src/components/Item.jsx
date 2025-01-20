@@ -1,5 +1,16 @@
+import styles from "./Item.module.css";
+
 const item = (props) => {
-	return <li className="list-group-item">{props.foodItems}</li>;
+	console.log(styles);
+	return (
+		<li className={`${styles["customList"]} list-group-item`}>
+			<span className={styles["customList"]}>{props.foodItems}</span>
+		</li>
+
+		// <li className={`${styles.customList} list-group-item`}>
+		// 	{props.foodItems}
+		// </li>
+	);
 };
 
 export default item;
@@ -14,5 +25,6 @@ export default item;
 // destructuring-------------------
 
 // const item = ({foodItems}) => {
-// return <li className="list-group-item">{foodItems}</li>;
+// return <li className="list-group-item">{foodItems}
+// </li>;
 // };

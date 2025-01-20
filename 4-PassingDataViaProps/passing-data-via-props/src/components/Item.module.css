@@ -1,0 +1,19 @@
+.customList {
+	background-color: rgb(232, 185, 193);
+	position: relative;
+	min-width: 10rem;
+}
+
+.custom-list-group {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.custom-list:hover {
+	background-color: rgb(255, 243, 243);
+	border: none;
+}
